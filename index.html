@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<html>
+
+<head>
+  <title>grrdle</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="./words.js"></script> 
+  <script src="./index.js"></script>   
+</head>
+
+<body>
+  <h1>Grrdle</h1>
+  <div class="wrap">
+    <div class="box">
+      <div class="guesses">
+        <ul class="guess" data-attempt="1">
+          <li class="letter" data-letter="1"></li>
+          <li class="letter" data-letter="2"></li>
+          <li class="letter" data-letter="3"></li>
+          <li class="letter" data-letter="4"></li>
+          <li class="letter" data-letter="5"></li>
+        </ul>
+        <ul class="guess" data-attempt="2">
+          <li class="letter" data-letter="1"></li>
+          <li class="letter" data-letter="2"></li>
+          <li class="letter" data-letter="3"></li>
+          <li class="letter" data-letter="4"></li>
+          <li class="letter" data-letter="5"></li>
+        </ul>
+        <ul class="guess" data-attempt="3">
+          <li class="letter" data-letter="1"></li>
+          <li class="letter" data-letter="2"></li>
+          <li class="letter" data-letter="3"></li>
+          <li class="letter" data-letter="4"></li>
+          <li class="letter"></li>
+        </ul>
+        <ul class="guess" data-attempt="4">
+          <li class="letter" data-letter="1"></li>
+          <li class="letter" data-letter="2"></li>
+          <li class="letter" data-letter="3"></li>
+          <li class="letter" data-letter="4"></li>
+          <li class="letter" data-letter="5"></li>
+        </ul>
+        <ul class="guess" data-attempt="5">
+          <li class="letter" data-letter="1"></li>
+          <li class="letter" data-letter="2"></li>
+          <li class="letter" data-letter="3"></li>
+          <li class="letter" data-letter="4"></li>
+          <li class="letter" data-letter="5"></li>
+        </ul>
+      </div>
+      <input class="input" length="5" placeholder="Type your guess and press enter" />
+      <h2 class="success">Grrdle!</h2>
+      <button class="retry">We all fail sometimes.</button>
+    </div> 
+</body>
+
 </html>
